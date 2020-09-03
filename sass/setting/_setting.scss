@@ -1,0 +1,44 @@
+@charset "UTF-8";
+//width
+$mainWidthSp:95%;
+$mainWidthPc:900px;
+
+//font-size
+$fontH1Sp:1.2rem;
+$fontH1Pc:25px;
+
+//color
+$mainColor:#6495ed;
+$subColor:#fff;
+$pointColor:#ed7864;
+$backColor:#f0f8ff;
+@mixin mainColorRgba($opacity){
+  background-color:rgba(100,149,237,$opacity);
+}
+@mixin pointColorRgba($opacity){
+  background-color:rgba(237,120,100,$opacity);
+}
+
+//border-radius
+$border-radius:10px;
+
+//box
+@mixin boxBase($padding){
+  color:$subColor;
+  background:$mainColor;
+  border-radius: $border-radius;
+  padding:$padding;
+}
+
+//BreakPint
+$breakpoints: (
+  'tb': 'screen and (min-width: 560px)',
+  'pc': 'screen and (min-width: 960px)'
+) !default;
+
+//BreakPint mixin
+@mixin mq($breakpoint: tb) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}

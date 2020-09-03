@@ -1,0 +1,19 @@
+.about {
+  background: url(../image/style-image/cat15.png) no-repeat;
+  background-position: right 8% bottom;
+  background-size: 30% auto;
+}
+.about-text {
+  margin: 0 auto;
+  padding: 1.5em;
+  border-radius: $border-radius;
+  background: rgba(255, 255, 255, .9);
+  line-height: 1.8em;
+}
+
+/*==TABLET==*/
+@include mq(){
+  .about{
+background-size:contain;
+  }
+}

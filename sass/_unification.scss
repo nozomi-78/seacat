@@ -1,0 +1,45 @@
+ *{
+  font-family: 'Helvetica Neue', 'Helvetica', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Arial', 'Yu Gothic', 'Meiryo', sans-serif;
+  line-height: 1.5rem;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: $backColor;
+  color: $mainColor;
+}
+h1 {
+  color: $subColor;
+  font-size: $fontH1Sp;
+}
+h2 {
+  margin: 1em auto;
+  border-bottom: solid 1px $pointColor;
+  text-align: center;
+  font-size: $fontH1Sp;
+}
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+main {
+  margin: 0 auto;
+  width: $mainWidthSp;
+}
+.cat-name {
+  font-weight: bold;
+}
+
+@include mq(pc) {
+  h1 {
+    font-size: $fontH1Pc;
+  }
+  h2 {
+    margin: 1em auto;
+    font-size: $fontH1Pc - 5;
+  }
+  main {
+    width: $mainWidthPc;
+  }
+}
