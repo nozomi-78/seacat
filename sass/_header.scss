@@ -5,6 +5,7 @@
   display: flex;
   padding: .5em 1em;
   background: $mainColor;
+
   justify-content: space-between;
   align-items: center;
 }
@@ -70,6 +71,7 @@
   transform-origin: top;
 
 @include mainColorRgba(.8);
+
   a {
     display: inline-block;
     padding: 1em 0;
@@ -94,12 +96,10 @@
   .header-button {
     display: none;
   }
-  .header-wrap{
-    background: $mainColor;
-  }
-  .header-inner {
+  .header-wrap {
     position: relative;
     z-index: 5;
+    background: $mainColor;
   }
   .header-nav {
     width: 100%;
@@ -119,16 +119,17 @@
 @include mq(pc) {
   .header-inner {
     display: flex;
+    margin: 0 auto;
+    width: 900px;
+
     justify-content: space-between;
-    width:900px;
-    margin:0 auto;
   }
   .header-nav {
-    width:auto;
+    width: auto;
   }
   .header-nav-inner {
     li {
-      width:(450px / 3);
+      width: (450px / 3);
     }
   }
 }

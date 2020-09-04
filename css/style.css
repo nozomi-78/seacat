@@ -169,11 +169,9 @@ main {
     display: none;
   }
   .header-wrap {
-    background: #6495ed;
-  }
-  .header-inner {
     position: relative;
     z-index: 5;
+    background: #6495ed;
   }
   .header-nav {
     width: 100%;
@@ -195,11 +193,11 @@ main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin: 0 auto;
+    width: 900px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 900px;
-    margin: 0 auto;
   }
   .header-nav {
     width: auto;
